@@ -1,0 +1,49 @@
+// ==========================================================================
+// 返回顶部浮动按钮样式 (Scroll To Top Plugin Styles)
+// ==========================================================================
+.scroll-to-top-btn {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    border-radius: 50%;
+    z-index: 999;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        background-color: @theme__color__primary;
+        transform: translateY(-3px);
+    }
+
+    .arrow {
+        position: absolute;
+        top: 16px;
+        left: 14px;
+        border: solid #ffffff;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 5px;
+        transform: rotate(-135deg);
+    }
+}
+
+// 移动端自适应微调
+.media-width(@max, @breakpoint-s) {
+    .scroll-to-top-btn {
+        right: 15px;
+        bottom: 15px;
+        width: 35px;
+        height: 35px;
+        
+        .arrow {
+            top: 14px;
+            left: 12px;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "qiangvei/magento2-module-scroll-top",
+    "description": "Magento 2 Scroll To Top Floating Button Module",
+    "require": {
+        "php": ">=8.1",
+        "magento/framework": "*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Qiangvei\\ScrollTop\\": ""
+        }
+    }
+}
